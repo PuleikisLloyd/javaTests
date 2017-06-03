@@ -27,7 +27,7 @@ public class myNFA {
     catch(IOException e) {e.printStackTrace();}
 
     List<String> eingabe = new LinkedList<String>();
-    for(int a = 1; a < 9; a++) {
+    for(int a = 1; a < 9; a++) {                    //Testwort muss mit Leerstellen eingegeben werden ...
       eingabe.add(args[a]);
     }
     Set<Integer> reachable = M.simulate(7, eingabe);
